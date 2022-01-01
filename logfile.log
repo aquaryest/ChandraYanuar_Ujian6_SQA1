@@ -1,0 +1,4 @@
+2022-01-01 15:07:57,740 INFO  [Log] Test called: Testing register page has started 
+2022-01-01 15:08:02,854 INFO  [Log] INFO: Navigating to https://shop.demoqa.com/ 
+2022-01-01 15:08:04,379 INFO  [Log] Test called: Testing login page has started 
+2022-01-01 15:08:04,957 INFO  [Log] INFO: Navigating to https://shop.demoqa.com/ 

@@ -1,0 +1,4 @@
+browser=Firefox
+myusername=sqademo
+email=sqademo@test.com
+password=sqademoinfinity
