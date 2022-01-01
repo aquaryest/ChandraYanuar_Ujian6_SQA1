@@ -9,6 +9,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.sqa.ujian6.config.AutomationFrameworkConfiguration;
 import com.sqa.ujian6.driver.DriverSingleton;
+import com.sqa.ujian6.page.ChartPage;
 import com.sqa.ujian6.page.LoginPage;
 import com.sqa.ujian6.page.RegisterPage;
 import com.sqa.ujian6.utils.ConfigurationProperties;
@@ -31,6 +32,7 @@ public class StepDefinition {
 	private WebDriver driver;
 	private RegisterPage registerPage;
 	private LoginPage loginPage;
+	private ChartPage chartPage;
 	ExtentTest extentTest;
 	static ExtentReports report = new ExtentReports("src/main/resources/TestReport.html");
 	
@@ -42,6 +44,7 @@ public class StepDefinition {
 		DriverSingleton.getInstance(configurationProperties.getBrowser());
 		registerPage = new RegisterPage();
 		loginPage = new LoginPage();
+		chartPage = new ChartPage();
 		TestCases[] tests = TestCases.values();
 		extentTest = report.startTest(tests[Utils.testCount].getTestName());
 		Log.getLogData(Log.class.getName()); //log4j
